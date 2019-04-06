@@ -1,0 +1,129 @@
+<android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/trip_green_background">
+
+        <RelativeLayout
+            android:id="@+id/rel_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true">
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/trips_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@id/rel_bottom"
+            android:background="#EDF1F2"/>
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/trips_view"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="#27C24C"
+            android:layout_marginTop="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:text="COMPLETED"/>
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/order_status"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="1dp"
+            android:text="Employee Salary:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/employee_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/order_status"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="54dp"
+            android:text="10:18 PM"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/order_status"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="67dp"
+            android:text="Employee Salary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/employee_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/order_status"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="10:18 PM"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/starting_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/destination"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="5dp"
+            android:text="Employee Name:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/destination"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="9:18 AM"
+            android:textSize="18sp" />
+
+        <!--android:layout_toEndOf="@+id/null"-->
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
